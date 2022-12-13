@@ -35,14 +35,17 @@
 function daily(input, output) {
     if (input.val() !== '') {
         let elves = input.val().split("\n\n")
-        elves.forEach((elf, index) =>{
+        elves.forEach((elf, index) => {
             elves[index] = elf.split("\n").reduce((partialSum, a) => partialSum + Number.parseInt(a), 0)
         })
-        elves.sort((a,b) => {return b-a})
+        elves.sort((a, b) => {
+            return b - a
+        })
         output.val(elves[0])
         part2(elves, output)
     }
 }
+
 /*
     --- Part Two ---
     By the time you calculate the answer to the Elves' question, they've already realized that the Elf carrying the most Calories of food might eventually run out of snacks.
@@ -52,5 +55,5 @@ function daily(input, output) {
 */
 
 function part2(elves, output) {
-    output.val(elves[0]+elves[1]+elves[2])
+    output.val(elves[0] + elves[1] + elves[2])
 }
