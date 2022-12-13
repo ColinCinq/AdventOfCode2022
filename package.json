@@ -1,0 +1,20 @@
+{
+  "name": "adventofcode2022",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e .js,.twig,.css app.js"
+  },
+  "author": "ColinCinq",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "twig": "^1.15.4"
+  }
+}

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}jour {{day}}{% endblock %}
+
+{% block style %}
+    <link href="css/daily.css" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+
+	<div class="row">
+		<h1 class="col-2 back_button"> <a href="/">&lt;Back</a> </h1>
+		<h1 class="col-8">{{full_date}}</h1>
+	</div>
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-6">Input :</div>
+			<div class="col-6">Output :</div>
+			<div class="col-6">
+				<textarea id="input" class="form-control" rows="30"></textarea>
+			</div>
+			<div class="col-6">
+				<textarea id="output" class="form-control" rows="3"></textarea>
+				<button type="button" class="submit mt-3">[Submit]</button>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

@@ -1,0 +1,45 @@
+#page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* scroll bar chrome */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+::-webkit-scrollbar-thumb {
+  background: #8a8a8a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background: #0f0f23;
+  color: #cccccc;
+  font-family: "Source Code Pro", monospace;
+  padding: 20px;
+  font-weight: 400;
+}
+
+h1 {
+  margin: 0;
+  font-size: 75px;
+  line-height: 75px;
+  text-align: center;
+  font-weight: 400;
+  color: #00cc00;
+  text-shadow: 0 0 2px #00cc00, 0 0 5px #00cc00;
+  user-select: none;
+}
+
+a {
+  color: unset;
+}
+a:hover {
+  color: unset;
+}
