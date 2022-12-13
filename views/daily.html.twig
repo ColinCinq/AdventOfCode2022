@@ -8,14 +8,15 @@
 
 {% block body %}
 
+	<input type="hidden" name="day" value="{{day}}">
 	<div class="row">
 		<h1 class="col-2 back_button"> <a href="/">&lt;Back</a> </h1>
 		<h1 class="col-8">{{full_date}}</h1>
 	</div>
 	<div class="container">
 		<div class="row mt-5">
-			<div class="col-6">Input :</div>
-			<div class="col-6">Output :</div>
+			<div class="col-6"><label for="input">Input :</label></div>
+			<div class="col-6"><label for="output">Output :</label></div>
 			<div class="col-6">
 				<textarea id="input" class="form-control" rows="30"></textarea>
 			</div>
@@ -29,5 +30,6 @@
 {% endblock %}
 
 {% block script %}
-
+	<script src="js/daily.js"></script>
+	<script src="js/days/{{ day }}.js"></script>
 {% endblock %}

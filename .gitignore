@@ -1,2 +1,5 @@
 node_modules
 package-lock.json
+.idea/AdventOfCode2022.iml
+.idea/modules.xml
+.idea/vcs.xml
