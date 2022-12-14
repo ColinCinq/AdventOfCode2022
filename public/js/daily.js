@@ -1,7 +1,5 @@
 $(document).ready(function () {
-  let input = $("#input"),
-    output = $("#output")
-  $(".submit").click( () => {
+    let input = $("#input"),
+        output = $("#output")
     daily(input, output)
-  })
 })

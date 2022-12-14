@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}jour {{day}}{% endblock %}
+{% block title %}jour {{ day }}{% endblock %}
 
 {% block style %}
     <link href="css/daily.css" rel="stylesheet"/>
@@ -8,28 +8,28 @@
 
 {% block body %}
 
-	<input type="hidden" name="day" value="{{day}}">
-	<div class="row">
-		<h1 class="col-2 back_button"> <a href="/">&lt;Back</a> </h1>
-		<h1 class="col-8">{{full_date}}</h1>
-	</div>
-	<div class="container">
-		<div class="row mt-5">
-			<div class="col-6"><label for="input">Input :</label></div>
-			<div class="col-6"><label for="output">Output :</label></div>
-			<div class="col-6">
-				<textarea id="input" class="form-control" rows="30"></textarea>
-			</div>
-			<div class="col-6">
-				<textarea id="output" class="form-control" rows="3"></textarea>
-				<button type="button" class="submit mt-3">[Submit]</button>
-			</div>
-		</div>
-	</div>
+    <input type="hidden" name="day" value="{{ day }}">
+    <div class="row">
+        <h1 class="col-2 back_button"><a href="/">&lt;Back</a></h1>
+        <h1 class="col-8">{{ full_date }}</h1>
+    </div>
+    <form class="container" method="post">
+        <div class="row mt-5">
+            <div class="col-6"><label for="input">Input :</label></div>
+            <div class="col-6"><label for="output">Output :</label></div>
+            <div class="col-6">
+                <textarea id="input" name="input" class="form-control" rows="30">{{ input }}</textarea>
+            </div>
+            <div class="col-6">
+                <textarea id="output" name="output" class="form-control" rows="3"></textarea>
+                <input type="submit" class="submit mt-3" value="[Submit]">
+            </div>
+        </div>
+    </form>
 
 {% endblock %}
 
 {% block script %}
-	<script src="js/daily.js"></script>
-	<script src="js/days/{{ day }}.js"></script>
+    <script src="js/daily.js"></script>
+    <script src="js/days/{{ day }}.js"></script>
 {% endblock %}
