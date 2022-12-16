@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    var words = ["Calorie Counting", "Rock Paper Scissors", "Rucksack Reorganization", "Camp Cleanup", "Supply Stacks", "Tuning Trouble", "No Space Left On Device", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa"];
+    var words = ["Calorie Counting", "Rock Paper Scissors", "Rucksack Reorganization", "Camp Cleanup", "Supply Stacks",
+        "Tuning Trouble", "No Space Left On Device", "Treetop Tree House", "aaaaaa", "aaaaaa",
+        "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa"];
 
     var date = new Date();
     var day = date.getDate();
