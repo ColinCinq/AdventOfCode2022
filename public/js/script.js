@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var words = ["Calorie Counting", "Rock Paper Scissors", "Rucksack Reorganization", "Camp Cleanup", "Supply Stacks",
-        "Tuning Trouble", "No Space Left On Device", "Treetop Tree House", "Rope Bridge", "aaaaaa",
+        "Tuning Trouble", "No Space Left On Device", "Treetop Tree House", "Rope Bridge", "Cathode-Ray Tube",
         "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa", "aaaaaa"];
 
     var date = new Date();

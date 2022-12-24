@@ -1,20 +1,21 @@
 .back_button {
-  cursor: pointer;
-  user-select: none;
+    cursor: pointer;
+    user-select: none;
 }
 
-textarea {
-  background-color: #1e1e31 !important;
-  color: #cccccc !important;
+#output, #input {
+    background-color: #1e1e31 !important;
+    color: #cccccc !important;
+    line-height: 0.9 !important;
 }
 
 .submit {
-  background: transparent;
-  border: 0;
-  font-family: inherit;
-  font-size: inherit;
-  margin: 0;
-  padding: 0;
-  color: #009900;
-  cursor: pointer;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    color: #009900;
+    cursor: pointer;
 }
